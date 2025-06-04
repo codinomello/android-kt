@@ -1,4 +1,16 @@
-fun main () {
+// 02 - Operators
+
+fun main() {
+    // Mathematical operators
+
+    /*
+    * +: Addition
+    * -: Subtraction
+    * *: Multiplication
+    * /: Division
+    * %: Modulus
+    */
+
     val x = 5
     val y = 3
 
@@ -8,8 +20,10 @@ fun main () {
     println("x / y = ${x / y}")
     println("x % y = ${x % y}")
 
+    // Precedence of operations
     println("3 + 2 * 4 = ${(3 + 2) * 4}")
 
+    // Compound assignment
     var result = x + y
 
     result += 2
@@ -27,28 +41,18 @@ fun main () {
     result %= 2
     println("result %= $result")
 
+    // Unary operators
+
+    /*
+    * ++: Increment
+    * --: Decrement
+    */
+
     var z = 0
 
-    println("z++ = ${z++}")
-    println("++z = ${++z}")
+    println("z++ = ${z++}") // prints 0, then increments
+    println("++z = ${++z}") // increments, then prints
 
-    println("z-- = ${z--}")
-    println("--z = ${--z}")
-
-    val condition = true
-    if (condition) {
-        println("the condition is true.")
-    } else {
-        println("the condition is false.")
-    }
-
-    val number = 10
-    if (number >= 5) {
-        println("the number is greater than or equal to 5")
-    } else if (number == 6) {
-        println("the number is equal to 6")
-    } else {
-        println("the number is less than 4")
-    }
-
+    println("z-- = ${z--}") // prints 2, then decrements
+    println("--z = ${--z}") // decrements, then prints
 }
